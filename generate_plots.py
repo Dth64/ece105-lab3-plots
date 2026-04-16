@@ -80,12 +80,21 @@ def main():
 
     sensor_a, sensor_b, timestamps = generate_data(seed)
 
+    plt.figure(figsize=(10, 8))
+
+    plt.subplot(2, 2, 1)
     plot_scatter(sensor_a, sensor_b, timestamps)
+
+    plt.subplot(2, 2, 2)
     plot_histogram(sensor_a, sensor_b)
+
+    plt.subplot(2, 2, 3)
     plot_box(sensor_a, sensor_b)
 
+    plt.tight_layout()
     plt.savefig("sensor_analysis.png")
     plt.show()
+
 
 
 if __name__ == "__main__":
