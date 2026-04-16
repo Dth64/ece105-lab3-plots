@@ -1,0 +1,15 @@
+# Python
+_pycache_/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Environments
+.env
+
+# AI files
+ai_transcript.md
